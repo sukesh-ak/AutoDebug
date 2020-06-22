@@ -46,3 +46,14 @@ Quite often when you have large memory dumps, you need to run multiple debugger 
             Symbol search path is: srv*
             Expanded Symbol search path is: cache *; SRV* https://msdl.microsoft.com/download/symbols
 
+### Task list
+- [x] Functional debugger to run Windbg commands
+- [ ] Command configuration file as a parameter
+- [ ] Add CLR sample functions like SOS commands
+
+### Feedback
+Feel free to provide feedback on how it would help and what needs to be added
+- Open issues
+- Send PR
+- Other ideas and suggestions are welcome
+
