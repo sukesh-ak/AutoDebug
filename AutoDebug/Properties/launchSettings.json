@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AutoDebug": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\DAv2\\Dumps\\2020\\iisexpress.DMP"
+    }
+  }
+}
