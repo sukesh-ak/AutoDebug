@@ -9,7 +9,7 @@ AutoDebug project make use of ClrMD v2 API's to build the underlying debugger.
 Quite often when you have large memory dumps, you need to run multiple debugger commands first to start looking deeper into the issues. This project would provide an easy way to automate for running a set of commands on the memory dumps at hand.
 
 ### Usage
-```
+```c#
             // Create Debugger instance and call Execute for any Windbg Command
             using (DbgEngine dbg = new DbgEngine(DumpFileName))
             {
