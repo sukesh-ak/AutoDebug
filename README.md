@@ -1,14 +1,14 @@
 # AutoDebug
 Simple Automated Debugger to run Windbg Commands and also query .NET CLR Runtime data
 
-## Overview
+### Overview
 [Microsoft.Diagnostics.Runtime (ClrMD)](https://github.com/microsoft/clrmd) is a set of APIs for introspecting processes and dumps.
 AutoDebug project make use of ClrMD v2 API's to build the underlying debugger.
 
-## Why AutoDebug?
+### Why AutoDebug?
 Quite often when you have large memory dumps, you need to run multiple debugger commands first to start looking deeper into the issues. This project would provide an easy way to automate for running a set of commands on the memory dumps at hand.
 
-## Usage
+### Usage
 ```
             // Create Debugger instance and call Execute for any Windbg Command
             using (DbgEngine dbg = new DbgEngine(DumpFileName))
@@ -19,7 +19,7 @@ Quite often when you have large memory dumps, you need to run multiple debugger 
             }
 ```
 
-## Output
+### Output
 > Sample Output of the above commands
 
             Debug session time: Fri Jun 12 23:46:40.000 2020(UTC + 5:30)
