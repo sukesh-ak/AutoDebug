@@ -1,0 +1,5 @@
+﻿.time
+.sympath
+~
+~*kb 100
+.dumpdebug

@@ -5,6 +5,11 @@ namespace AutoDebug
 {
     class Program
     {
+        /// <summary>
+        ///  Create this command list file in the same folder
+        /// </summary>
+        static string commandListFileName = "commandlist.txt";
+        
         static void Main(string[] args)
         {
             if (args.Length != 1)
@@ -21,13 +26,25 @@ namespace AutoDebug
                 Environment.Exit(1);
             }
 
-            // Create Debugger instance and call Execute any Windbg Command
+            /// Get complete path of the command list file
+            commandListFileName = Path.Combine(Directory.GetCurrentDirectory(),commandListFileName);
+
+            /// Create Debugger instance and call Execute any Windbg Command
             using (DbgEngine dbg = new DbgEngine(DumpFileName))
             {
-                Console.WriteLine(dbg.Execute(".time"));
-                Console.WriteLine(dbg.Execute("~"));
-                Console.WriteLine(dbg.Execute(".sympath"));
-                // Console.WriteLine(dbg.Execute("~*kb"));
+                /// Check if command file exists
+                if (File.Exists(commandListFileName))
+                {
+                    /// Read file one line at time
+                    foreach (string cmd in File.ReadLines(commandListFileName))
+                    {
+                        if (!string.IsNullOrEmpty(cmd))
+                        {
+                            Console.WriteLine($"[Command]> {cmd}");
+                            Console.WriteLine(dbg.Execute(cmd));
+                        }
+                    }
+                }
             }
 
             #region Sample Output of above 3 commands

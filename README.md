@@ -48,7 +48,7 @@ Quite often when you have large memory dumps, you need to run multiple debugger 
 
 ### Task list
 - [x] Functional debugger to run Windbg commands
-- [ ] Command configuration file as a parameter
+- [x] Run native Windbg Commands from text file
 - [ ] Add CLR sample functions like SOS commands
 
 ### Feedback
