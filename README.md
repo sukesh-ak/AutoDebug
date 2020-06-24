@@ -8,6 +8,7 @@ AutoDebug project make use of ClrMD v2 API's to build the underlying debugger.
 ### Why AutoDebug?
 Quite often when you have large memory dumps, you need to run multiple debugger commands first to start looking deeper into the issues. This project would provide an easy way to automate for running a set of commands on the memory dumps at hand.
 
+### Documentation
 Check the [Wiki for documentation](https://github.com/sukesh-ak/AutoDebug/wiki)
 
 ### Task list
