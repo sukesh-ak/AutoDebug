@@ -39,6 +39,20 @@ namespace AutoDebug
                     Console.WriteLine("Local DAC....: " + dacLocation);
             }
             Console.WriteLine();
+
+            #region >>> Sample output of above code
+                //>>> CLR Info
+                //Architecture.: Amd64
+                //Pointer Size.: 8
+                //Display Name.: DbgEng, IDebugClient = 1a4fe703148
+                //  Clr Flavor...: Core
+                //  Clr Version..: 4.700.20.20201
+                //Filesize.....: 56C000
+                //Timestamp....: 5E867108
+                //Dac File.....: mscordaccore_Amd64_Amd64_4.700.20.20201.dll
+                //Local DAC....: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.4\mscordaccore.dll
+
+            #endregion
         }
 
         /// <summary>
