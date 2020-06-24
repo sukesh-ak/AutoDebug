@@ -1,5 +1,5 @@
 # AutoDebug
-Simple Automated Debugger to run Windbg Commands and also query .NET CLR Runtime data
+Simple Automated Debugger to run Windbg Commands and also query .NET CLR Runtime data in C#
 
 ### Overview
 [Microsoft.Diagnostics.Runtime (ClrMD)](https://github.com/microsoft/clrmd) is a set of APIs for introspecting processes and dumps.
