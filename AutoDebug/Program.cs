@@ -32,6 +32,7 @@ namespace AutoDebug
             /// Create Debugger instance and call Execute any Windbg Command
             using (DbgEngine dbg = new DbgEngine(DumpFileName))
             {
+                #region Command list file
                 /// Check if command file exists
                 if (File.Exists(commandListFileName))
                 {
@@ -45,6 +46,13 @@ namespace AutoDebug
                         }
                     }
                 }
+                #endregion
+
+                /// Sample ClrMD v2 snippets to mimic SOS Windbg extension commands
+                /// Check the sample code in ClrDebugger.cs file
+                dbg.ClrDacInfo();
+                dbg.DumpHeap(StatsOnly : false);
+                dbg.DumpModules();
             }
 
             #region Sample Output of above 3 commands
