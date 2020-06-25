@@ -14,7 +14,7 @@ Make sure to check the Wiki for detailed information [Wiki for documentation](ht
 ### Task list
 - [x] Functional debugger to run Windbg commands
 - [x] Run native Windbg Commands from text file
-- [ ] Add CLR sample functions like SOS commands
+- [x] Add CLR sample functions like SOS commands
 
 ### Feedback
 Feel free to provide feedback on how it would help and what needs to be added
