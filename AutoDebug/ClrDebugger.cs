@@ -102,7 +102,7 @@ namespace AutoDebug
             }
             Console.WriteLine();
 
-            #region >>> Above code sample output below, similiar to !sos.dumpheap
+            #region >>> Output similiar to !sos.dumpheap
             //          Object MethodTable          Size Type
             //000001d1445a1000 000001d13e08bf90       24 Free
             //000001d1445a1018 000001d13e08bf90       24 Free
