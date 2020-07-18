@@ -1,4 +1,4 @@
-name: .NET Core CI/CD
+name: AutoDebug CI/CD
 
 on:
   push:
